@@ -17,6 +17,12 @@ jq '.result' -r |\
 submeta pallets --with-storage
 ```
 
+or if you have a local `metadata.json`:  
+
+```rust
+cat metadata.json | jq metadata.json '.result' -r | submeta pallets --with-storage
+```
+
 <!-- LINKS -->
 
 [jq]: https://stedolan.github.io/jq/
