@@ -17,7 +17,7 @@ jq '.result' -r |\
 submeta pallets --with-storage
 ```
 
-or if you have a local `metadata.json`:  
+or if you already have the result from that RPC cached in a `metadata.json`:  
 
 ```rust
 cat metadata.json | jq metadata.json '.result' -r | submeta pallets --with-storage
